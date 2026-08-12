@@ -1,0 +1,486 @@
+/* ============================================================
+   RESUME PAGE — resume.css
+   Layered on top of style.css
+   ============================================================ */
+
+/* ---- PAGE WRAPPER ---- */
+.resume-page {
+  min-height: 100vh;
+  padding: 100px 0 6rem;
+  background: var(--bg);
+}
+
+.resume-shell {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ---- NAV RESUME ACTIONS ---- */
+.nav-resume-actions {
+  display: flex;
+  align-items: center;
+}
+
+.nav-resume-actions .btn {
+  font-size: 0.65rem;
+  padding: 0.6rem 1.2rem;
+}
+
+/* ---- RESUME DOCUMENT ---- */
+.resume-doc {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 4rem 4.5rem;
+  position: relative;
+}
+
+/* Accent corner top-left */
+.resume-doc::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: var(--accent);
+}
+
+/* ---- HEADER ---- */
+.r-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 3rem;
+  align-items: start;
+  margin-bottom: 2.5rem;
+}
+
+.r-name {
+  font-family: 'Fraunces', serif;
+  font-size: 2.6rem;
+  font-weight: 300;
+  color: var(--text);
+  line-height: 1.05;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
+}
+
+.r-title {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  margin-bottom: 0.3rem;
+  font-style: italic;
+}
+
+.r-subtitle {
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.r-header-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  align-items: flex-end;
+  padding-top: 0.3rem;
+}
+
+.r-contact-line {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+}
+
+.r-contact-line a {
+  color: var(--text-muted);
+  transition: color 0.2s;
+}
+
+.r-contact-line a:hover { color: var(--accent); }
+
+.r-contact-icon {
+  color: var(--accent);
+  font-size: 0.55rem;
+}
+
+/* ---- DIVIDER ---- */
+.r-divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+
+/* ---- SECTIONS ---- */
+.r-section {
+  margin-bottom: 0.5rem;
+}
+
+.r-section--two-col {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.r-section-title {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+/* ---- SUMMARY ---- */
+.r-summary {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+.r-summary strong {
+  color: var(--text);
+  font-weight: 700;
+}
+
+/* ---- JOB ENTRIES ---- */
+.r-job {
+  margin-bottom: 2.2rem;
+  padding-bottom: 2.2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.r-job:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.r-job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 0.9rem;
+}
+
+.r-job-role {
+  font-family: 'Fraunces', serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--text);
+  line-height: 1.2;
+  margin-bottom: 0.2rem;
+}
+
+.r-job-company {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+}
+
+.r-job-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.2rem;
+  flex-shrink: 0;
+}
+
+.r-job-date {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+}
+
+.r-job-location {
+  font-size: 0.62rem;
+  color: var(--text-faint);
+  letter-spacing: 0.06em;
+}
+
+/* ---- BULLETS ---- */
+.r-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.r-bullets li {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  padding-left: 1.1rem;
+  position: relative;
+}
+
+.r-bullets li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--text-faint);
+  font-size: 0.7rem;
+  top: 0.05em;
+}
+
+.r-bullets--tight {
+  gap: 0.4rem;
+}
+
+/* ---- SKILLS ---- */
+.r-skills-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.r-skill-row {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.r-skill-cat {
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  flex-shrink: 0;
+}
+
+.r-skill-list {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ---- EDUCATION ---- */
+.r-edu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.r-edu-entry {
+  padding-left: 0.8rem;
+  border-left: 2px solid var(--accent);
+}
+
+.r-edu-degree {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.15rem;
+  line-height: 1.3;
+}
+
+.r-edu-school {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-bottom: 0.15rem;
+}
+
+.r-edu-year {
+  font-size: 0.6rem;
+  color: var(--text-faint);
+  letter-spacing: 0.1em;
+}
+
+/* ---- ACHIEVEMENTS ---- */
+.r-achievements {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.r-achievements li {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  padding-left: 1rem;
+  position: relative;
+}
+
+.r-achievements li::before {
+  content: '◆';
+  position: absolute;
+  left: 0;
+  font-size: 0.38rem;
+  color: var(--accent);
+  top: 0.38em;
+}
+
+/* ---- FEATURED PROJECTS ---- */
+.r-projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.r-project-item {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 1rem;
+  align-items: baseline;
+  font-size: 0.84rem;
+}
+
+.r-project-name {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  color: var(--text);
+  font-size: 0.82rem;
+}
+
+.r-project-desc {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ---- FOOTER ---- */
+.r-footer {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.r-footer .mono {
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  color: var(--text-faint);
+}
+
+.r-footer-tag {
+  font-style: italic;
+  color: var(--accent) !important;
+}
+
+/* ---- PRINT STYLES ---- */
+@media print {
+  @page {
+    margin: 0.8in 0.7in;
+    size: A4;
+  }
+
+  body {
+    background: #fff !important;
+    color: #111 !important;
+  }
+
+  [data-theme="dark"],
+  [data-theme="light"] {
+    --bg: #fff;
+    --surface: #fff;
+    --text: #111;
+    --text-muted: #444;
+    --text-faint: #888;
+    --accent: #8b5e2e;
+    --border: #ddd;
+    --border-strong: #ccc;
+  }
+
+  .nav,
+  .nav-resume-actions,
+  .hero-bg-text {
+    display: none !important;
+  }
+
+  .resume-page {
+    padding: 0 !important;
+  }
+
+  .resume-shell {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .resume-doc {
+    border: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .resume-doc::before {
+    display: none;
+  }
+
+  .r-job {
+    page-break-inside: avoid;
+  }
+
+  .r-section--two-col {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+
+  a {
+    color: inherit !important;
+  }
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 720px) {
+  .resume-doc {
+    padding: 2.5rem 2rem;
+  }
+
+  .r-header {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .r-header-right {
+    align-items: flex-start;
+  }
+
+  .r-section--two-col {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .r-job-header {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .r-job-right {
+    align-items: flex-start;
+  }
+
+  .r-project-item {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+
+  .r-skill-row {
+    grid-template-columns: 80px 1fr;
+  }
+
+  .nav-resume-actions {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-shell { padding: 0 1rem; }
+  .resume-doc { padding: 2rem 1.5rem; }
+  .r-name { font-size: 2rem; }
+}

@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhivakar Rajaram — Blockchain Engineer · Tech Lead · Founder</title>
+  <meta name="description" content="Dhivakar Rajaram — Blockchain Engineer, Tech Lead, and Founder of Dhiva-Labs. From research to reality." />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="shortcut icon" href="favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400;500&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,700;1,9..144,300;1,9..144,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#">DR</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#dhivalabs">Dhiva-Labs</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="resume.html" style="color:var(--accent)">Résumé</a></li>
+      </ul>
+      <button class="cmd-trigger-btn" id="cmdTrigger" onclick="openPalette()" aria-label="Open search command palette">
+        <svg class="cmd-search-svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <span>Search</span>
+        <kbd>Ctrl K</kbd>
+      </button>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon sun">☀</span>
+        <span class="theme-icon moon">◑</span>
+      </button>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#dhivalabs">Dhiva-Labs</a>
+      <a href="#projects">Work</a>
+      <a href="#contact">Contact</a>
+      <a href="resume.html">Résumé</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow" data-reveal>Chennai, India · Open to Leadership Roles · Remote &amp; Relocation</p>
+      <h1 class="hero-name" data-reveal>
+        <span>Dhivakar</span>
+        <span>Rajaram</span>
+      </h1>
+      <p class="hero-domain" data-reveal>Blockchain&nbsp;&nbsp;·&nbsp;&nbsp;Engineering Leadership&nbsp;&nbsp;·&nbsp;&nbsp;Systems &amp; AI</p>
+      <p class="hero-tagline" data-reveal><em>From research to reality.</em></p>
+      <div class="hero-cta" data-reveal>
+        <a class="btn btn-filled" href="#experience">My experience</a>
+        <a class="btn btn-outline" href="#contact">Get in touch</a>
+      </div>
+      <div class="hero-stats" data-reveal>
+        <div class="stat">
+          <span class="stat-value">4+</span>
+          <span class="stat-label">Years experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value">38+</span>
+          <span class="stat-label">Public Builds</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value">5</span>
+          <span class="stat-label">Store Platforms</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value">IIT PG</span>
+          <span class="stat-label">AI &amp; ML</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-bg-text" aria-hidden="true">DR</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-inner container">
+      <div class="about-left" data-reveal>
+        <span class="section-label">About</span>
+        <blockquote class="pull-quote">
+          "Engineer.<br/>Leader.<br/>Builder."
+        </blockquote>
+        <div class="about-location">
+          <span class="mono">Chennai, India</span>
+        </div>
+      </div>
+      <div class="about-right" data-reveal>
+        <p>I am a Blockchain Engineer and Engineering Leader with 4+ years building in startup environments — taking products from raw research all the way to production while owning architecture, team, and delivery simultaneously.</p>
+        <p>My core expertise spans blockchain protocol engineering, privacy systems (EVM, Monero-LWS, Bulletproofs++), applied cryptography, and systems design. Beyond protocol work, I've led cross-functional teams, driven product strategy, and made the architectural calls that determine whether something ships or stalls.</p>
+        <p>I hold a PG Diploma in AI &amp; ML from IIT Guwahati. Alongside my engineering leadership roles, I operate <a href="https://dhivalabs.com/" target="_blank" style="color:var(--accent);text-decoration:underline"><strong>Dhiva-Labs</strong></a> — an independent software laboratory. Through Dhiva-Labs, I have designed, engineered, and shipped <strong>38+ finished open-source projects</strong> across 5 distribution platforms (Snap Store, Chrome Web Store, Google Play, Ubuntu APT/PPA, and GitHub). I'm actively seeking leadership roles: <strong>Tech Lead, Engineering Manager, CTO</strong> or founding-engineer positions where I can own more than a backlog.</p>
+
+        <div class="skills-grid">
+          <span class="pill">Blockchain Architecture</span>
+          <span class="pill">Privacy Systems</span>
+          <span class="pill">Bulletproofs++</span>
+          <span class="pill">EVM / LWS / Monero</span>
+          <span class="pill">Solidity</span>
+          <span class="pill">C++</span>
+          <span class="pill">Python</span>
+          <span class="pill">Go</span>
+          <span class="pill">Rust</span>
+          <span class="pill">Dart / Flutter</span>
+          <span class="pill">TypeScript</span>
+          <span class="pill">WASM</span>
+          <span class="pill">Local AI / RAG</span>
+          <span class="pill">DevSecOps &amp; Security</span>
+          <span class="pill">AWS / Infra</span>
+          <span class="pill">Team Leadership</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT I BRING — LEADERSHIP PILLARS -->
+  <section class="pillars">
+    <div class="container">
+      <div class="pillars-grid">
+        <div class="pillar-card" data-reveal>
+          <span class="pillar-num mono">01</span>
+          <h3 class="pillar-title">Technical Leadership</h3>
+          <p class="pillar-desc">I've owned architecture end-to-end across multiple production blockchain systems — not just contributing, but setting direction, making hard calls, and being accountable for outcomes.</p>
+        </div>
+        <div class="pillar-card" data-reveal>
+          <span class="pillar-num mono">02</span>
+          <h3 class="pillar-title">Team Building</h3>
+          <p class="pillar-desc">Hired, mentored, and grown engineering teams at startups. I know how to create rhythm, unblock people, and keep quality high without burning the team out.</p>
+        </div>
+        <div class="pillar-card" data-reveal>
+          <span class="pillar-num mono">03</span>
+          <h3 class="pillar-title">Research to Production</h3>
+          <p class="pillar-desc">I've taken cryptographic research papers — Bulletproofs++, account abstraction, privacy protocols — and turned them into shipped, production-grade systems. Not many engineers do both.</p>
+        </div>
+        <div class="pillar-card" data-reveal>
+          <span class="pillar-num mono">04</span>
+          <h3 class="pillar-title">Startup DNA</h3>
+          <p class="pillar-desc">Four years of zero-to-one product building means I thrive in ambiguity, move fast without losing rigour, and understand that the best engineers are also product thinkers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-label">Experience</span>
+        <h2 class="section-title">The work</h2>
+      </div>
+
+      <div class="timeline">
+
+        <!-- Dhiva-Labs -->
+        <div class="timeline-entry" data-reveal>
+          <div class="timeline-meta">
+            <span class="timeline-date mono">Apr 2026 — Present</span>
+            <span class="timeline-location mono">India</span>
+          </div>
+          <div class="timeline-body">
+            <div class="timeline-badge">Founder</div>
+            <h3 class="timeline-company">Dhiva-Labs</h3>
+            <p class="timeline-role">Founder &amp; Principal Engineer</p>
+            <ul class="timeline-bullets">
+              <li>Founded an independent engineering lab spanning software, hardware, embedded systems, AI, and creative tech projects.</li>
+              <li>Setting the lab's technical direction — from firmware-level embedded work to high-level product architecture.</li>
+              <li>Building a portfolio of original products and open-source contributions driven by curiosity and real-world usefulness.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Zodiako -->
+        <div class="timeline-entry" data-reveal>
+          <div class="timeline-meta">
+            <span class="timeline-date mono">Dec 2025 — Present</span>
+            <span class="timeline-location mono">British Virgin Islands · Remote</span>
+          </div>
+          <div class="timeline-body">
+            <div class="timeline-badge">Current Role</div>
+            <h3 class="timeline-company">Zodiako Ltd</h3>
+            <p class="timeline-role">Blockchain Developer</p>
+            <ul class="timeline-bullets">
+              <li>Core blockchain engineer on an international-scale product — owning protocol and smart contract work end to end.</li>
+              <li>Working across the full delivery cycle: architecture decisions, implementation, review, and deployment in a distributed team.</li>
+              <li>Applying deep experience from previous blockchain builds to ship with speed and confidence.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Vee4 -->
+        <div class="timeline-entry" data-reveal>
+          <div class="timeline-meta">
+            <span class="timeline-date mono">Jan 2023 — Nov 2025</span>
+            <span class="timeline-location mono">Dubai · Remote</span>
+          </div>
+          <div class="timeline-body">
+            <div class="timeline-badge">Tech Lead</div>
+            <h3 class="timeline-company">Vee4 Software</h3>
+            <p class="timeline-role">Blockchain Developer &amp; Tech Lead</p>
+            <ul class="timeline-bullets">
+              <li>Led the full product engineering lifecycle across EVM, LWS, and privacy-based blockchain systems — from initial research through to production deployment.</li>
+              <li>Owned architecture decisions, team leadership, sprint planning, and cross-functional coordination with product, design, and mobile teams.</li>
+              <li>Implemented Bulletproofs++ for zero-knowledge range proofs and ERC-4337 Account Abstraction — both research-heavy projects shipped to production.</li>
+              <li>Built and managed AWS infrastructure, Nginx, and CI/CD pipelines; mentored junior engineers on protocol design and best practices.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Blockhash -->
+        <div class="timeline-entry" data-reveal>
+          <div class="timeline-meta">
+            <span class="timeline-date mono">Feb 2022 — Dec 2022</span>
+            <span class="timeline-location mono">Chennai, India</span>
+          </div>
+          <div class="timeline-body">
+            <div class="timeline-badge">R&amp;D</div>
+            <h3 class="timeline-company">Blockhash Technologies</h3>
+            <p class="timeline-role">R&amp;D Blockchain Engineer</p>
+            <ul class="timeline-bullets">
+              <li>Translated cryptography and blockchain research papers into a production privacy-first messaging application — designed and built from scratch.</li>
+              <li>Defined and enforced end-to-end security architecture at the protocol layer.</li>
+              <li>Led a small engineering team, establishing research processes and delivery rhythm in an early-stage startup.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DHIVA-LABS -->
+  <section class="dhivalabs" id="dhivalabs">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-label">Independent Software Laboratory</span>
+        <h2 class="section-title">Dhiva-Labs</h2>
+      </div>
+
+      <div class="dhivalabs-inner">
+        <div class="dhivalabs-intro" data-reveal>
+          <p class="dhivalabs-quote">"Let's Build Something Remarkable."</p>
+          <p class="dhivalabs-desc">Dhiva-Labs (<a href="https://dhivalabs.com/" target="_blank" style="color:var(--accent);text-decoration:underline">dhivalabs.com</a>) is my independent software laboratory. I build, experiment, and ship software across AI/ML, developer tools, blockchain, cryptography, and systems engineering.</p>
+          <p class="dhivalabs-desc">Every app, every line of cryptographic code, and every firmware module is engineered by one person from first principles — resulting in <strong>38+ finished open-source projects</strong> published across 5 store platforms.</p>
+
+          <div class="dhivalabs-domains">
+            <span class="section-label" style="margin-bottom:0.8rem;display:block">Lab Domains</span>
+            <div class="domain-list">
+              <div class="domain-item">
+                <span class="domain-icon">▸</span>
+                <div>
+                  <strong>AI &amp; Systems Engineering</strong>
+                  <span>Local-first AI gateways, offline RAG servers, custom LLM routing</span>
+                </div>
+              </div>
+              <div class="domain-item">
+                <span class="domain-icon">▸</span>
+                <div>
+                  <strong>Developer &amp; Security Tools</strong>
+                  <span>DevSecOps vulnerability scanners, Git GUIs, API mock engines</span>
+                </div>
+              </div>
+              <div class="domain-item">
+                <span class="domain-icon">▸</span>
+                <div>
+                  <strong>Applied Cryptography &amp; Blockchain</strong>
+                  <span>Bulletproofs++, zero-knowledge proofs, Monero-LWS tools, EVM smart contracts</span>
+                </div>
+              </div>
+              <div class="domain-item">
+                <span class="domain-icon">▸</span>
+                <div>
+                  <strong>Linux &amp; Mobile Desktop Apps</strong>
+                  <span>Privacy web browsers, system utilities, Nearby Share cross-platform clients</span>
+                </div>
+              </div>
+              <div class="domain-item">
+                <span class="domain-icon">▸</span>
+                <div>
+                  <strong>Hardware &amp; Embedded Systems</strong>
+                  <span>Firmware in C++20, CHIP-8/GameBoy emulators, microcontrollers</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dhivalabs-links">
+            <a class="btn btn-filled" href="https://dhivalabs.com/" target="_blank">Visit Dhiva-Labs ↗</a>
+            <a class="btn btn-outline" href="https://github.com/Dhiva-Labs" target="_blank">GitHub (39 Repos) ↗</a>
+            <a class="btn btn-outline" href="https://www.linkedin.com/company/dhiva-labs" target="_blank">LinkedIn ↗</a>
+          </div>
+        </div>
+
+        <div class="dhivalabs-stack-panel" data-reveal>
+          <span class="section-label" style="margin-bottom:1.2rem;display:block">Lab Stack &amp; Distribution</span>
+          <div class="stack-category">
+            <span class="stack-cat-label mono">Languages</span>
+            <div class="skills-grid" style="margin-top:0.5rem">
+              <span class="pill">C++20</span>
+              <span class="pill">Python</span>
+              <span class="pill">Go</span>
+              <span class="pill">Rust</span>
+              <span class="pill">Dart</span>
+              <span class="pill">TypeScript</span>
+              <span class="pill">Solidity</span>
+            </div>
+          </div>
+          <div class="stack-category">
+            <span class="stack-cat-label mono">Platforms</span>
+            <div class="skills-grid" style="margin-top:0.5rem">
+              <span class="pill">Linux Desktop</span>
+              <span class="pill">Android</span>
+              <span class="pill">Chrome Extensions</span>
+              <span class="pill">CLI / TUI</span>
+            </div>
+          </div>
+          <div class="stack-category">
+            <span class="stack-cat-label mono">Distribution (5 Stores)</span>
+            <div class="skills-grid" style="margin-top:0.5rem">
+              <span class="pill">Snap Store</span>
+              <span class="pill">Chrome Web Store</span>
+              <span class="pill">Google Play</span>
+              <span class="pill">Ubuntu APT/PPA</span>
+              <span class="pill">GitHub Releases</span>
+            </div>
+          </div>
+
+          <div class="lab-status-box">
+            <span class="lab-status-dot"></span>
+            <div>
+              <p class="lab-status-title mono">38+ Shipped Builds</p>
+              <p class="lab-status-sub">All open-source, production-grade, and free to use.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS — split by context -->
+  <section class="projects" id="projects">
+    <div class="container">
+
+      <!-- Dhiva-Labs Projects -->
+      <div class="section-header" data-reveal>
+        <span class="section-label">Dhiva-Labs · Open-Source Builds</span>
+        <h2 class="section-title">From the lab</h2>
+      </div>
+
+      <div class="projects-grid projects-grid--lab" style="margin-bottom:5rem">
+
+        <div class="project-card project-card--featured" data-reveal>
+          <div class="project-card-inner">
+            <div class="project-card-top">
+              <div class="project-number mono">DL–01</div>
+              <span class="badge badge-github"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg> Open Source</span>
+            </div>
+            <h3 class="project-name">DL Prism</h3>
+            <p class="project-desc">Local-first AI gateway and proxy router: one beam in, every model out. Features policy-based model routing, automatic failover, cost budgets, and a companion developer suite.</p>
+            <div class="project-tags">
+              <span class="tag">Go</span>
+              <span class="tag">Local AI</span>
+              <span class="tag">LLM Router</span>
+              <span class="tag">CLI</span>
+            </div>
+            <a class="project-link" href="https://github.com/Dhiva-Labs/dl_prism" target="_blank">View on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card project-card--featured" data-reveal>
+          <div class="project-card-inner">
+            <div class="project-card-top">
+              <div class="project-number mono">DL–02</div>
+              <span class="badge badge-github"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg> Linux Desktop</span>
+            </div>
+            <h3 class="project-name">CloneStudio</h3>
+            <p class="project-desc">Move everything to your new Linux computer via Wi-Fi, direct ethernet cable, or USB drive. Beginner-proof system migration with encrypted, resumable transfers.</p>
+            <div class="project-tags">
+              <span class="tag">Dart</span>
+              <span class="tag">Flutter</span>
+              <span class="tag">Linux Desktop</span>
+              <span class="tag">Encryption</span>
+            </div>
+            <a class="project-link" href="https://github.com/Dhiva-Labs/CloneStudio" target="_blank">View on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card project-card--featured" data-reveal>
+          <div class="project-card-inner">
+            <div class="project-card-top">
+              <div class="project-number mono">DL–03</div>
+              <span class="badge badge-chrome"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M12 2a10 10 0 00-7.31 16.82l4.86-8.43h10.42C18.58 5.51 15.61 2 12 2zm7.1 2.94A9.97 9.97 0 0122 12a9.98 9.98 0 01-4.86 8.64l-4.72-8.18h7.68zm-7.1 17.06a9.97 9.97 0 01-8.5-4.89l4.9-8.49 4.7 8.14A4 4 0 0012 22z"/></svg> Chrome Web Store</span>
+            </div>
+            <h3 class="project-name">markdrop</h3>
+            <p class="project-desc">Turn anything into Markdown — Chrome extension, desktop app, Android utility, web API, Telegram bot, and Claude MCP connector.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Chrome Extension</span>
+              <span class="tag">Claude MCP</span>
+              <span class="tag">Web API</span>
+            </div>
+            <a class="project-link" href="https://chromewebstore.google.com/detail/faoajjlfiflbnegodccplgdhapoibhca" target="_blank">View on Chrome Web Store →</a>
+          </div>
+        </div>
+
+        <div class="project-card project-card--featured" data-reveal>
+          <div class="project-card-inner">
+            <div class="project-card-top">
+              <div class="project-number mono">DL–04</div>
+              <span class="badge badge-github"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg> DevSecOps Platform</span>
+            </div>
+            <h3 class="project-name">dl-sentinel</h3>
+            <p class="project-desc">Developer-focused security scanning platform: scans repositories for secrets, vulnerable dependencies, insecure code, container/infra misconfigs, and smart-contract risks.</p>
+            <div class="project-tags">
+              <span class="tag">TypeScript</span>
+              <span class="tag">DevSecOps</span>
+              <span class="tag">Security Scanner</span>
+              <span class="tag">Smart Contracts</span>
+            </div>
+            <a class="project-link" href="https://github.com/Dhiva-Labs/dl-sentinel" target="_blank">View on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="project-card project-card--featured" data-reveal>
+          <div class="project-card-inner">
+            <div class="project-card-top">
+              <div class="project-number mono">DL–05</div>
+              <span class="badge badge-snap"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M13.06 2.89L4 13.16h7.09L7.94 21.1 20 10.84h-7.09L16.06 2.9z"/></svg> Snap Store</span>
+            </div>
+            <h3 class="project-name">BranchPilot</h3>
+            <p class="project-desc">A GitKraken-class visual Git GUI for Linux desktop — visual commit graph, hunk-level staging, and visual interactive rebase wrapping system Git CLI.</p>
+            <div class="project-tags">
+              <span class="tag">Dart</span>
+              <span class="tag">Flutter</span>
+              <span class="tag">Snap Store</span>
+              <span class="tag">Git GUI</span>
+            </div>
+            <a class="project-link" href="https://snapcraft.io/branchpilot" target="_blank">View on Snap Store →</a>
+          </div>
+        </div>
+
+        <div class="project-card project-card--featured" data-reveal>
+          <div class="project-card-inner">
+            <div class="project-card-top">
+              <div class="project-number mono">DL–06</div>
+              <span class="badge badge-snap"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M13.06 2.89L4 13.16h7.09L7.94 21.1 20 10.84h-7.09L16.06 2.9z"/></svg> Snap Store</span>
+            </div>
+            <h3 class="project-name">NearShare</h3>
+            <p class="project-desc">Send and receive files between Linux, Android, Windows, and macOS via Nearby Share / Quick Share protocol. UKEY2 encryption, mDNS discovery, and BLE trigger beacon.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Snap Store</span>
+              <span class="tag">UKEY2</span>
+              <span class="tag">Networking</span>
+            </div>
+            <a class="project-link" href="https://snapcraft.io/nearshare" target="_blank">View on Snap Store →</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Past Engineering Work -->
+      <div class="section-header" data-reveal>
+        <span class="section-label">Professional Work · Past</span>
+        <h2 class="section-title">Built at work</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card" data-reveal>
+          <div class="project-card-inner">
+            <div class="project-card-top">
+              <div class="project-number mono">W–01</div>
+              <span class="project-status project-status--past">Vee4 · 2023–25</span>
+            </div>
+            <h3 class="project-name">Privacy Chain Protocol</h3>
+            <p class="project-desc">Research-to-production implementation of Bulletproofs++ for zero-knowledge range proofs on a custom blockchain — reducing proof size and verification cost.</p>
+            <div class="project-tags">
+              <span class="tag">Bulletproofs++</span>
+              <span class="tag">ZK Proofs</span>
+              <span class="tag">C++</span>
+              <span class="tag">Cryptography</span>
+            </div>
+            <a class="project-link" href="#contact">View details →</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-reveal>
+          <div class="project-card-inner">
+            <div class="project-card-top">
+              <div class="project-number mono">W–02</div>
+              <span class="project-status project-status--past">Vee4 · 2023–25</span>
+            </div>
+            <h3 class="project-name">ERC-4337 Wallet Infrastructure</h3>
+            <p class="project-desc">Account abstraction architecture enabling smart wallets with gasless transactions, social recovery, and seamless dApp UX — shipped to production.</p>
+            <div class="project-tags">
+              <span class="tag">Solidity</span>
+              <span class="tag">ERC-4337</span>
+              <span class="tag">EVM</span>
+              <span class="tag">Account Abstraction</span>
+            </div>
+            <a class="project-link" href="#contact">View details →</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-reveal>
+          <div class="project-card-inner">
+            <div class="project-card-top">
+              <div class="project-number mono">W–03</div>
+              <span class="project-status project-status--past">Blockhash · 2022</span>
+            </div>
+            <h3 class="project-name">Blockchain Chat App</h3>
+            <p class="project-desc">A privacy-first decentralised messaging application built from scratch — end-to-end encrypted at the protocol layer, no central relay, custom backend.</p>
+            <div class="project-tags">
+              <span class="tag">C++</span>
+              <span class="tag">Custom Protocol</span>
+              <span class="tag">E2E Encryption</span>
+              <span class="tag">P2P</span>
+            </div>
+            <a class="project-link" href="#contact">View details →</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-reveal>
+          <div class="project-card-inner">
+            <div class="project-card-top">
+              <div class="project-number mono">W–04</div>
+              <span class="project-status project-status--past">Vee4 · 2023–25</span>
+            </div>
+            <h3 class="project-name">AI/ML Integration System</h3>
+            <p class="project-desc">Designed and deployed an AI/ML pipeline integrated with blockchain infrastructure — bringing intelligent automation into on-chain decision flows.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">AI/ML</span>
+              <span class="tag">AWS</span>
+              <span class="tag">Smart Contracts</span>
+            </div>
+            <a class="project-link" href="#contact">View details →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-left" data-reveal>
+          <span class="section-label">Contact</span>
+          <h2 class="contact-headline">Let's build something.</h2>
+          <p class="contact-sub">Whether you're hiring for a leadership role, building a product that needs a technical co-founder, collaborating with the lab, or just want to talk tech — reach out.</p>
+          <div class="contact-open-to" style="margin-top:2rem">
+            <span class="section-label" style="margin-bottom:0.8rem;display:block">Open to</span>
+            <div class="open-to-list">
+              <span class="open-to-item">Tech Lead &amp; Engineering Manager roles</span>
+              <span class="open-to-item">CTO / VP Engineering</span>
+              <span class="open-to-item">Founding Engineer positions</span>
+              <span class="open-to-item">Blockchain / Web3 teams</span>
+              <span class="open-to-item">Lab collaborations via Dhiva-Labs</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right" data-reveal>
+          <div class="contact-item">
+            <span class="contact-icon">◎</span>
+            <div>
+              <span class="contact-label mono">Mobile</span>
+              <a class="contact-value" href="tel:+918754979134">+91 87549 79134</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">◎</span>
+            <div>
+              <span class="contact-label mono">Email</span>
+              <a class="contact-value" href="mailto:dhivakar1010@gmail.com">dhivakar1010@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">◎</span>
+            <div>
+              <span class="contact-label mono">LinkedIn</span>
+              <a class="contact-value" href="https://www.linkedin.com/in/dhivakar-rajaram/" target="_blank">dhivakar-rajaram</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">◎</span>
+            <div>
+              <span class="contact-label mono">GitHub</span>
+              <a class="contact-value" href="https://github.com/dhivadhiva" target="_blank">github.com/dhivadhiva</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">◎</span>
+            <div>
+              <span class="contact-label mono">Lab Website</span>
+              <a class="contact-value" href="https://dhivalabs.com/" target="_blank">dhivalabs.com ↗</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">◎</span>
+            <div>
+              <span class="contact-label mono">Lab GitHub</span>
+              <a class="contact-value" href="https://github.com/Dhiva-Labs" target="_blank">github.com/Dhiva-Labs ↗</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">◎</span>
+            <div>
+              <span class="contact-label mono">Location</span>
+              <span class="contact-value">Chennai, India · Remote &amp; Relocation open</span>
+            </div>
+          </div>
+          <a class="btn btn-filled contact-cta" href="mailto:reachout@dhivalabs.com" onclick="copyEmail('reachout@dhivalabs.com', event)">Send a message (Copy Email)</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-name mono">Dhivakar Rajaram © 2026</span>
+      <span class="footer-tagline"><em>From research to reality.</em></span>
+      <span class="footer-built mono">Built with precision. · <a href="https://dhivalabs.com/" target="_blank" style="color:var(--accent)">Dhiva-Labs (dhivalabs.com)</a></span>
+    </div>
+  </footer>
+
+  <!-- COMMAND PALETTE MODAL -->
+  <div class="cmd-palette-backdrop" id="cmdPalette" aria-hidden="true">
+    <div class="cmd-palette-dialog" role="dialog" aria-modal="true" aria-label="Command Palette">
+      <div class="cmd-palette-header">
+        <svg class="cmd-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" class="cmd-input" id="cmdInput" placeholder="Search projects, stack, navigation..." autocomplete="off" />
+        <kbd class="cmd-kbd">ESC</kbd>
+      </div>
+      <div class="cmd-palette-results" id="cmdResults"></div>
+      <div class="cmd-palette-footer">
+        <span><kbd>↑</kbd> <kbd>↓</kbd> Navigate</span>
+        <span><kbd>↵</kbd> Select</span>
+        <span><kbd>ESC</kbd> Close</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST CONTAINER -->
+  <div class="toast" id="toast"></div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
