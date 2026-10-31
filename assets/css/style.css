@@ -332,7 +332,6 @@ h1,h2,h3,h4 { font-family: 'Fraunces', serif; font-weight: 300; line-height: 1.1
   display: grid; grid-template-columns: 1fr 1fr;
   border: 1px solid var(--card-border);
 }
-.projects-grid--lab { border-bottom: none; }
 
 .project-card { background: var(--card-bg); transition: background 0.2s; }
 .project-card:hover { background: var(--card-hover); }
@@ -449,6 +448,11 @@ a.contact-value:hover { color: var(--accent); }
 .badge-chrome:hover { background: rgba(56,189,248,0.18); border-color: #38bdf8; }
 .badge-github { color: var(--text-muted); background: var(--pill-bg); border: 1px solid var(--pill-border); }
 .badge-github:hover { color: var(--text); border-color: var(--accent); }
+.badge-ms { color: #4ea8ff; background: rgba(78,168,255,0.08); border: 1px solid rgba(78,168,255,0.22); }
+.project-badges { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 0.4rem; }
+.project-desc code { font-family: 'DM Mono', monospace; font-size: 0.78em; }
+.projects-more { display: flex; justify-content: center; margin: 2.5rem 0 5rem; }
+.projects-more .btn { font-size: 0.65rem; padding: 0.7rem 1.4rem; }
 
 .cmd-search-svg {
   display: inline-block; flex-shrink: 0; stroke: currentColor;

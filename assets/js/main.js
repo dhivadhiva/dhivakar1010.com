@@ -154,13 +154,15 @@
   const cmdTrigger = document.getElementById('cmdTrigger');
 
   const COMMANDS = [
-    { title: 'DL Prism — Local AI Gateway', sub: 'Go · Policy Routing · Failover', category: 'Project', url: 'https://github.com/Dhiva-Labs/dl_prism', icon: '⚡' },
-    { title: 'CloneStudio — Linux Migration', sub: 'Dart / Flutter · Encrypted Transfers', category: 'Project', url: 'https://github.com/Dhiva-Labs/CloneStudio', icon: '📦' },
-    { title: 'markdrop — Everything to Markdown', sub: 'Python · Chrome Extension · Claude MCP', category: 'Project', url: 'https://github.com/Dhiva-Labs/markdrop', icon: '📝' },
-    { title: 'dl-sentinel — Security Scanner', sub: 'TypeScript · DevSecOps Scanner', category: 'Project', url: 'https://github.com/Dhiva-Labs/dl-sentinel', icon: '🛡️' },
+    { title: 'ApiWorkbench — API Client', sub: 'Dart / Flutter · Snap Store · MS Store', category: 'Project', url: 'https://github.com/Dhiva-Labs/ApiWorkbench', icon: '⚡' },
+    { title: 'CloudDrop — Upload-only Cloud Folder', sub: 'Rust · Snap Store · MS Store', category: 'Project', url: 'https://github.com/Dhiva-Labs/CloudDrop', icon: '☁️' },
+    { title: 'CrossShell — Linux ↔ Windows Remote', sub: 'Dart / Rust · SSH · Remote Desktop', category: 'Project', url: 'https://github.com/Dhiva-Labs/CrossShell', icon: '🔗' },
+    { title: 'DiskRescue — Photo & Video Recovery', sub: 'Rust · Linux · Windows', category: 'Project', url: 'https://github.com/Dhiva-Labs/DiskRescue', icon: '💽' },
+    { title: 'Kilonova — Monero Wallet', sub: 'Dart / Rust · Full node & LWS', category: 'Project', url: 'https://github.com/Dhiva-Labs/kilonova', icon: '🪐' },
     { title: 'BranchPilot — Visual Git GUI', sub: 'Dart / Flutter · Snap Store', category: 'Project', url: 'https://snapcraft.io/branchpilot', icon: '🌿' },
-    { title: 'NearShare — Nearby Share Client', sub: 'Python · UKEY2 Encryption · Snap Store', category: 'Project', url: 'https://snapcraft.io/nearshare', icon: '📡' },
-    { title: 'Dhiva-Labs Official Site', sub: 'dhivalabs.com · 38+ Shipped Projects', category: 'External', url: 'https://dhivalabs.com/', icon: '🌐' },
+    { title: 'monero-lws — Upstream Fixes', sub: '8 merged pull requests · C++', category: 'Upstream', url: 'https://github.com/vtnerd/monero-lws/pulls?q=is%3Apr+author%3Adhivadhiva', icon: '🔧' },
+    { title: 'Dhiva-Labs Official Site', sub: 'dhivalabs.com · 46 Shipped Projects', category: 'External', url: 'https://dhivalabs.com/', icon: '🌐' },
+    { title: 'Sponsor Dhiva-Labs', sub: 'github.com/sponsors/Dhiva-Labs', category: 'External', url: 'https://github.com/sponsors/Dhiva-Labs', icon: '💖' },
     { title: 'View Professional Résumé', sub: 'Interactive & Printable PDF View', category: 'Navigation', url: 'resume.html', icon: '📄' },
     { title: 'Explore Work & Experience', sub: 'Timeline & Professional History', category: 'Navigation', url: '#experience', icon: '💼' },
     { title: 'Copy Lab Email', sub: 'reachout@dhivalabs.com', category: 'Action', action: () => copyEmail('reachout@dhivalabs.com'), icon: '📧' }
