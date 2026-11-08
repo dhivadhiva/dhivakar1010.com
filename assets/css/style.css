@@ -340,7 +340,17 @@ h1,h2,h3,h4 { font-family: 'Fraunces', serif; font-weight: 300; line-height: 1.1
 .projects-grid:not(.projects-grid--lab) .project-card:nth-child(3),
 .projects-grid:not(.projects-grid--lab) .project-card:nth-child(4) { border-bottom: none; }
 .projects-grid--lab .project-card:nth-child(3),
-.projects-grid--lab .project-card:nth-child(4) { border-bottom: 1px solid var(--card-border); }
+.projects-grid--lab .project-card:nth-child(4),
+.projects-grid--lab .project-card:nth-child(5),
+.projects-grid--lab .project-card:nth-child(6) { border-bottom: 1px solid var(--card-border); }
+.projects-grid--lab .project-card--wide { grid-column: 1 / -1; border-right: none; }
+.ext-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+.ext-item { display: flex; flex-direction: column; }
+.ext-name { font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 400; color: var(--text); margin-bottom: 0.5rem; }
+.ext-desc { font-size: 0.82rem; color: var(--text-muted); line-height: 1.7; flex: 1; margin-bottom: 1rem; }
+.ext-links { display: flex; flex-wrap: wrap; gap: 1rem; }
+.ext-links a { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.1em; color: var(--accent); transition: color 0.2s; }
+.ext-links a:hover { color: var(--accent-hover); }
 
 .project-card-inner { padding: 2.5rem; height: 100%; display: flex; flex-direction: column; }
 .project-card-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
@@ -414,6 +424,7 @@ a.contact-value:hover { color: var(--accent); }
   .project-card:nth-child(odd) { border-right: none; }
   .project-card { border-bottom: 1px solid var(--card-border) !important; }
   .project-card:last-child { border-bottom: none !important; }
+  .ext-list { grid-template-columns: 1fr; gap: 1.6rem; }
   .hero-stats { flex-direction: column; align-items: flex-start; }
   .stat-divider { width: 40px; height: 1px; }
 }
@@ -449,6 +460,7 @@ a.contact-value:hover { color: var(--accent); }
 .badge-github { color: var(--text-muted); background: var(--pill-bg); border: 1px solid var(--pill-border); }
 .badge-github:hover { color: var(--text); border-color: var(--accent); }
 .badge-ms { color: #4ea8ff; background: rgba(78,168,255,0.08); border: 1px solid rgba(78,168,255,0.22); }
+.badge-firefox { color: #a77bff; background: rgba(167,123,255,0.08); border: 1px solid rgba(167,123,255,0.22); }
 .project-badges { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 0.4rem; }
 .project-desc code { font-family: 'DM Mono', monospace; font-size: 0.78em; }
 .projects-more { display: flex; justify-content: center; margin: 2.5rem 0 5rem; }
