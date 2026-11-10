@@ -164,7 +164,7 @@
     { title: 'Markdrop Clipper — Web Pages to Markdown', sub: 'Browser extension · Firefox · Chrome', category: 'Project', url: 'https://github.com/Dhiva-Labs/markdrop', icon: '📝' },
     { title: 'DL Image Tools — Private Image Editing', sub: 'Browser extension · Firefox · Chrome', category: 'Project', url: 'https://github.com/Dhiva-Labs/dl-image-tools', icon: '🖼️' },
     { title: 'monero-lws — Upstream Fixes', sub: '8 merged pull requests · C++', category: 'Upstream', url: 'https://github.com/vtnerd/monero-lws/pulls?q=is%3Apr+author%3Adhivadhiva', icon: '🔧' },
-    { title: 'Dhiva-Labs Official Site', sub: 'dhivalabs.com · 46 Shipped Projects', category: 'External', url: 'https://dhivalabs.com/', icon: '🌐' },
+    { title: 'Dhiva-Labs Official Site', sub: 'dhivalabs.com · 50+ Projects', category: 'External', url: 'https://dhivalabs.com/', icon: '🌐' },
     { title: 'Sponsor Dhiva-Labs', sub: 'github.com/sponsors/Dhiva-Labs', category: 'External', url: 'https://github.com/sponsors/Dhiva-Labs', icon: '💖' },
     { title: 'View Professional Résumé', sub: 'Interactive & Printable PDF View', category: 'Navigation', url: 'resume.html', icon: '📄' },
     { title: 'Explore Work & Experience', sub: 'Timeline & Professional History', category: 'Navigation', url: '#experience', icon: '💼' },
