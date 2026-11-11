@@ -339,11 +339,19 @@ h1,h2,h3,h4 { font-family: 'Fraunces', serif; font-weight: 300; line-height: 1.1
 .project-card:nth-child(1),.project-card:nth-child(2) { border-bottom: 1px solid var(--card-border); }
 .projects-grid:not(.projects-grid--lab) .project-card:nth-child(3),
 .projects-grid:not(.projects-grid--lab) .project-card:nth-child(4) { border-bottom: none; }
-.projects-grid--lab .project-card:nth-child(3),
-.projects-grid--lab .project-card:nth-child(4),
-.projects-grid--lab .project-card:nth-child(5),
-.projects-grid--lab .project-card:nth-child(6) { border-bottom: 1px solid var(--card-border); }
+/* Lab grid: a wide latest-release card leads, so the two-column cards start at
+   child 2 and the left column is the even children. */
+.projects-grid--lab .project-card { border-right: none; border-bottom: 1px solid var(--card-border); }
+.projects-grid--lab .project-card:nth-child(even):not(.project-card--wide) { border-right: 1px solid var(--card-border); }
+.projects-grid--lab .project-card:last-child { border-bottom: none; }
 .projects-grid--lab .project-card--wide { grid-column: 1 / -1; border-right: none; }
+.projects-grid--lab .project-card--wide .ext-list { margin-bottom: 1.4rem; }
+/* Upstream grid: an even number of cards, so the last two close the box. */
+.projects-grid.projects-grid--upstream .project-card:nth-child(n) { border-bottom: 1px solid var(--card-border); }
+.projects-grid.projects-grid--upstream .project-card:nth-last-child(-n+2) { border-bottom: none; }
+.upstream-intro { max-width: 46rem; margin-top: 1.2rem; font-size: 0.95rem; line-height: 1.8; color: var(--text-muted); }
+.upstream-intro strong { color: var(--text); font-weight: 500; }
+.upstream-org { color: var(--accent); letter-spacing: 0.12em; text-transform: uppercase; }
 .ext-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
 .ext-item { display: flex; flex-direction: column; }
 .ext-name { font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 400; color: var(--text); margin-bottom: 0.5rem; }
@@ -422,6 +430,7 @@ a.contact-value:hover { color: var(--accent); }
   .timeline-entry { grid-template-columns: 1fr; gap: 0.6rem; padding-left: 2.5rem; }
   .projects-grid { grid-template-columns: 1fr; }
   .project-card:nth-child(odd) { border-right: none; }
+  .projects-grid--lab .project-card:nth-child(even):not(.project-card--wide) { border-right: none; }
   .project-card { border-bottom: 1px solid var(--card-border) !important; }
   .project-card:last-child { border-bottom: none !important; }
   .ext-list { grid-template-columns: 1fr; gap: 1.6rem; }

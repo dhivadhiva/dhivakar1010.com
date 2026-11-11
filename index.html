@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400;500&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,700;1,9..144,300;1,9..144,400&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="assets/css/style.css?v=3" />
+  <link rel="stylesheet" href="assets/css/style.css?v=4" />
 </head>
 <body>
 
@@ -78,7 +78,7 @@
         </div>
         <div class="stat-divider"></div>
         <div class="stat">
-          <span class="stat-value">8</span>
+          <span class="stat-value">10</span>
           <span class="stat-label">Upstream PRs merged</span>
         </div>
         <div class="stat-divider"></div>
@@ -106,7 +106,7 @@
       <div class="about-right" data-reveal>
         <p>I am a software engineer with 4+ years in startup environments, working on AI systems, backend services and applied cryptography — taking products from raw research all the way to production while owning architecture, team, and delivery simultaneously.</p>
         <p>My core expertise spans blockchain protocol engineering, privacy systems (EVM, Monero-LWS, Bulletproofs++), applied cryptography, and systems design. Beyond protocol work, I've led cross-functional teams, driven product strategy, and made the architectural calls that determine whether something ships or stalls.</p>
-        <p>I hold an online PG Certification in AI &amp; ML from E&amp;ICT Academy, IIT Guwahati. Alongside my engineering work, I run <a href="https://dhivalabs.com/" target="_blank" style="color:var(--accent);text-decoration:underline"><strong>Dhiva-Labs</strong></a> — an independent software laboratory. Through Dhiva-Labs, I have designed and engineered <strong>50+ projects</strong> for Linux, Windows, Android, the web and the terminal, released through the Snap Store, Microsoft Store, a Launchpad PPA, Firefox Add-ons, the Chrome Web Store and GitHub Releases. I also send fixes upstream — <strong>eight merged pull requests</strong> in monero-lws, Monero's light-wallet server. I build with AI coding agents, planning and reviewing the work myself and routing it across models to control token cost.</p>
+        <p>I hold an online PG Certification in AI &amp; ML from E&amp;ICT Academy, IIT Guwahati. Alongside my engineering work, I run <a href="https://dhivalabs.com/" target="_blank" style="color:var(--accent);text-decoration:underline"><strong>Dhiva-Labs</strong></a> — an independent software laboratory. Through Dhiva-Labs, I have designed and engineered <strong>50+ projects</strong> for Linux, Windows, Android, the web and the terminal, released through the Snap Store, Microsoft Store, a Launchpad PPA, Firefox Add-ons, the Chrome Web Store and GitHub Releases. I also send fixes upstream to <strong>Monero</strong>, <strong>Google</strong>, <strong>Microsoft</strong>, <strong>Discord</strong> and <strong>Coinbase</strong>: <strong>ten merged pull requests</strong> so far, eight in monero-lws, Monero's light-wallet server, and two in Google's safe-bindings. I build with AI coding agents, planning and reviewing the work myself and routing it across models to control token cost.</p>
 
         <div class="skills-grid">
           <span class="pill">Blockchain Architecture</span>
@@ -182,7 +182,8 @@
               <li>Founded an independent engineering lab spanning software, hardware, embedded systems, AI, and creative tech projects.</li>
               <li>Built 50+ projects for Linux, Windows, Android, the web and the terminal, released through the Snap Store, the Microsoft Store, a Launchpad PPA, Firefox Add-ons, the Chrome Web Store and GitHub Releases.</li>
               <li>Flagships include ApiWorkbench (API client at Postman parity), CloudDrop (upload-only multi-cloud folder), CrossShell (Linux ↔ Windows SSH and remote desktop), DiskRescue (photo and video recovery) and Kilonova (Monero wallet).</li>
-              <li>Contributing fixes upstream: eight merged pull requests in vtnerd/monero-lws covering scanner correctness, WebSocket shutdown, payment-ID decryption, admin tooling and CI.</li>
+              <li>Latest release: Circuit Lab 1.0.0, a simulated electronics bench for Arduino, ESP32 and Raspberry Pi Pico that runs in the browser, on Linux and on Windows.</li>
+              <li>Contributing fixes upstream: eight merged pull requests in vtnerd/monero-lws (scanner correctness, WebSocket shutdown, payment-ID decryption, admin tooling and CI) and two in google/safe-bindings (lifetime safety in the Rust regex bindings), with more in review at Microsoft, Discord, Coinbase and Monero.</li>
             </ul>
           </div>
         </div>
@@ -295,7 +296,7 @@
                 <span class="domain-icon">▸</span>
                 <div>
                   <strong>Hardware &amp; Embedded Systems</strong>
-                  <span>Mouse and keyboard drivers, C++20 firmware, CHIP-8/Game Boy emulators</span>
+                  <span>Circuit Lab electronics simulator, mouse and keyboard drivers, C++20 firmware, CHIP-8/Game Boy emulators</span>
                 </div>
               </div>
             </div>
@@ -368,10 +369,42 @@
       </div>
 
       <div class="projects-grid projects-grid--lab">
+        <div class="project-card project-card--featured project-card--wide" id="circuit-lab" data-reveal>
+          <div class="project-card-inner">
+            <div class="project-card-top">
+              <div class="project-number mono">DL–01 · Latest release</div>
+              <div class="project-badges"><span class="project-status project-status--live">New · v1.0.0</span><span class="badge badge-github"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg> Open Source</span></div>
+            </div>
+            <h3 class="project-name">Circuit Lab</h3>
+            <p class="project-desc">Learn electronics on a simulated bench. Pick a board, wire a project, write the sketch and watch LEDs glow, servos turn and the serial monitor fill, all in the browser. Runs on the web, Linux and Windows from one Flutter codebase, with no account and no tracking.</p>
+            <div class="ext-list">
+              <div class="ext-item">
+                <h4 class="ext-name">88 projects, 8 boards</h4>
+                <p class="ext-desc">Ready-made projects in ten groups, wired onto Arduino Uno, Nano and Mega, ESP32, ESP32-S3, NodeMCU or Raspberry Pi Pico.</p>
+              </div>
+              <div class="ext-item">
+                <h4 class="ext-name">Simulated bench</h4>
+                <p class="ext-desc">Runs your Arduino sketch with a breadboard preview, catching a missing <code>pinMode</code>, a floating input or PWM on the wrong pin.</p>
+              </div>
+              <div class="ext-item">
+                <h4 class="ext-name">Designer &amp; exports</h4>
+                <p class="ext-desc">A circuit designer with 21 kinds of part, then export the code, wiring diagram, build sheet and parts list.</p>
+              </div>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Dart</span>
+              <span class="tag">Flutter</span>
+              <span class="tag">Web · Linux · Windows</span>
+              <span class="tag">Electronics</span>
+            </div>
+            <div class="ext-links"><a href="https://circuitlab.dhivalabs.com" target="_blank" rel="noopener">Try it in the browser ↗</a><a href="https://github.com/dhivadhiva/circuit_lab/releases/tag/v1.0.0" target="_blank" rel="noopener">Download v1.0.0 ↗</a><a href="https://github.com/dhivadhiva/circuit_lab" target="_blank" rel="noopener">GitHub ↗</a></div>
+          </div>
+        </div>
+
         <div class="project-card project-card--featured" data-reveal>
           <div class="project-card-inner">
             <div class="project-card-top">
-              <div class="project-number mono">DL–01</div>
+              <div class="project-number mono">DL–02</div>
               <div class="project-badges"><span class="badge badge-snap"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M13.06 2.89L4 13.16h7.09L7.94 21.1 20 10.84h-7.09L16.06 2.9z"/></svg> Snap Store</span><span class="badge badge-ms"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M3 3h8.5v8.5H3zM12.5 3H21v8.5h-8.5zM3 12.5h8.5V21H3zM12.5 12.5H21V21h-8.5z"/></svg> MS Store</span></div>
             </div>
             <h3 class="project-name">ApiWorkbench</h3>
@@ -389,7 +422,7 @@
         <div class="project-card project-card--featured" data-reveal>
           <div class="project-card-inner">
             <div class="project-card-top">
-              <div class="project-number mono">DL–02</div>
+              <div class="project-number mono">DL–03</div>
               <div class="project-badges"><span class="badge badge-snap"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M13.06 2.89L4 13.16h7.09L7.94 21.1 20 10.84h-7.09L16.06 2.9z"/></svg> Snap Store</span><span class="badge badge-ms"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M3 3h8.5v8.5H3zM12.5 3H21v8.5h-8.5zM3 12.5h8.5V21H3zM12.5 12.5H21V21h-8.5z"/></svg> MS Store</span></div>
             </div>
             <h3 class="project-name">CloudDrop</h3>
@@ -406,7 +439,7 @@
         <div class="project-card project-card--featured" data-reveal>
           <div class="project-card-inner">
             <div class="project-card-top">
-              <div class="project-number mono">DL–03</div>
+              <div class="project-number mono">DL–04</div>
               <span class="badge badge-github"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg> Open Source</span>
             </div>
             <h3 class="project-name">CrossShell</h3>
@@ -424,7 +457,7 @@
         <div class="project-card project-card--featured" data-reveal>
           <div class="project-card-inner">
             <div class="project-card-top">
-              <div class="project-number mono">DL–04</div>
+              <div class="project-number mono">DL–05</div>
               <span class="badge badge-github"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg> Open Source</span>
             </div>
             <h3 class="project-name">DiskRescue</h3>
@@ -442,7 +475,7 @@
         <div class="project-card project-card--featured" data-reveal>
           <div class="project-card-inner">
             <div class="project-card-top">
-              <div class="project-number mono">DL–05</div>
+              <div class="project-number mono">DL–06</div>
               <span class="badge badge-github"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.745 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg> Beta</span>
             </div>
             <h3 class="project-name">Kilonova</h3>
@@ -460,7 +493,7 @@
         <div class="project-card project-card--featured" data-reveal>
           <div class="project-card-inner">
             <div class="project-card-top">
-              <div class="project-number mono">DL–06</div>
+              <div class="project-number mono">DL–07</div>
               <span class="badge badge-snap"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M13.06 2.89L4 13.16h7.09L7.94 21.1 20 10.84h-7.09L16.06 2.9z"/></svg> Snap Store</span>
             </div>
             <h3 class="project-name">BranchPilot</h3>
@@ -478,7 +511,7 @@
         <div class="project-card project-card--featured project-card--wide" id="extensions" data-reveal>
           <div class="project-card-inner">
             <div class="project-card-top">
-              <div class="project-number mono">DL–07</div>
+              <div class="project-number mono">DL–08</div>
               <div class="project-badges"><span class="badge badge-firefox">Firefox Add-ons</span><span class="badge badge-chrome">Chrome Web Store</span></div>
             </div>
             <h3 class="project-name">Browser extensions</h3>
@@ -511,76 +544,142 @@
       <div class="section-header" id="upstream" data-reveal>
         <span class="section-label">Open Source · Upstream</span>
         <h2 class="section-title">Fixes sent upstream</h2>
+        <p class="upstream-intro">Pull requests to the organizations whose code I build on: <strong>Monero</strong>, <strong>Google</strong>, <strong>Microsoft</strong>, <strong>Discord</strong>, <strong>Coinbase</strong> and <strong>Base</strong>. Ten are merged so far, eight in monero-lws and two in Google&rsquo;s safe-bindings; the rest are in review.</p>
       </div>
-      <div class="projects-grid" style="margin-bottom:5rem">
+      <div class="projects-grid projects-grid--upstream">
         <div class="project-card" data-reveal>
           <div class="project-card-inner">
             <div class="project-card-top">
-              <div class="project-number mono">U–01</div>
-              <span class="project-status project-status--live">6 merged</span>
+              <div class="project-number mono">U–01 · <span class="upstream-org">Monero</span></div>
+              <span class="project-status project-status--live">8 merged · 2 in review</span>
             </div>
-            <h3 class="project-name">monero-lws scanner &amp; server</h3>
-            <p class="project-desc">Fixes in Monero's light-wallet server: payment IDs decrypted per account, new accounts picked up while the scanner waits at the chain tip, one WebSocket close per /feed connection, height index kept in step on rescan, an EINTR timeout and Debug-build asserts.</p>
+            <h3 class="project-name">monero-lws, Monero&rsquo;s light-wallet server</h3>
+            <p class="project-desc">Payment IDs decrypted per account, new accounts picked up while the scanner waits at the chain tip, one WebSocket close per /feed connection, the height index kept in step on rescan, an EINTR timeout, Debug-build asserts, <code>webhook_add</code> and <code>webhook_list</code> admin commands, and unit tests in a Debug CI build. <code>delete_accounts</code> and FCMP++ pool transactions are in review.</p>
             <div class="project-tags">
               <span class="tag">C++</span>
               <span class="tag">Monero</span>
               <span class="tag">LMDB</span>
               <span class="tag">WebSocket</span>
             </div>
-            <a class="project-link" href="https://github.com/vtnerd/monero-lws/pulls?q=is%3Apr+author%3Adhivadhiva+is%3Amerged" target="_blank">View merged PRs →</a>
+            <a class="project-link" href="https://github.com/vtnerd/monero-lws/pulls?q=is%3Apr+author%3Adhivadhiva" target="_blank" rel="noopener">View PRs →</a>
           </div>
         </div>
-
         <div class="project-card" data-reveal>
           <div class="project-card-inner">
             <div class="project-card-top">
-              <div class="project-number mono">U–02</div>
+              <div class="project-number mono">U–02 · <span class="upstream-org">Google</span></div>
               <span class="project-status project-status--live">2 merged · 1 in review</span>
             </div>
-            <h3 class="project-name">monero-lws admin &amp; CI</h3>
-            <p class="project-desc">New <code>webhook_add</code> and <code>webhook_list</code> commands for monero-lws-admin and unit tests in a Debug CI build, both merged; <code>delete_accounts</code> is in review.</p>
+            <h3 class="project-name">safe-bindings</h3>
+            <p class="project-desc">Lifetime guards on the C++ bindings to Rust&rsquo;s regex crate, so calling <code>AsStr()</code>, <code>Find()</code>, <code>FindAll()</code> or <code>Split()</code> on a temporary no longer compiles into a dangling view. In review: an out-of-bounds write, a use-after-free and a memory blowup fixed in the EXIF bindings, with regression tests.</p>
             <div class="project-tags">
               <span class="tag">C++</span>
-              <span class="tag">CLI</span>
-              <span class="tag">CI</span>
+              <span class="tag">Rust</span>
+              <span class="tag">FFI</span>
+              <span class="tag">Memory Safety</span>
             </div>
-            <a class="project-link" href="https://github.com/vtnerd/monero-lws/pulls?q=is%3Apr+author%3Adhivadhiva" target="_blank">View PRs →</a>
+            <a class="project-link" href="https://github.com/google/safe-bindings/pulls?q=is%3Apr+author%3Adhivadhiva" target="_blank" rel="noopener">View PRs →</a>
           </div>
         </div>
-
         <div class="project-card" data-reveal>
           <div class="project-card-inner">
             <div class="project-card-top">
-              <div class="project-number mono">U–03</div>
+              <div class="project-number mono">U–03 · <span class="upstream-org">Monero</span></div>
               <span class="project-status project-status--wip">In review</span>
             </div>
-            <h3 class="project-name">Monero wallet</h3>
-            <p class="project-desc">Stops view-only wallets reporting outgoing amounts near 2<sup>64</sup> when some input key images are unknown, and flags incomplete records in the wallet RPC and CLI. Covered by unit and functional tests.</p>
+            <h3 class="project-name">Monero wallet &amp; FCMP++</h3>
+            <p class="project-desc">Stops view-only wallets reporting outgoing amounts near 2<sup>64</sup> when some input key images are unknown. For the FCMP++ upgrade, writes the new proof fields into the transaction JSON so pool transactions keep their real hash.</p>
             <div class="project-tags">
               <span class="tag">C++</span>
               <span class="tag">Monero</span>
               <span class="tag">wallet2</span>
+              <span class="tag">FCMP++</span>
             </div>
-            <a class="project-link" href="https://github.com/monero-project/monero/pull/11641" target="_blank">View PR →</a>
+            <a class="project-link" href="https://github.com/search?q=is%3Apr+author%3Adhivadhiva+repo%3Amonero-project%2Fmonero+repo%3Aseraphis-migration%2Fmonero&type=pullrequests" target="_blank" rel="noopener">View PRs →</a>
           </div>
         </div>
-
         <div class="project-card" data-reveal>
           <div class="project-card-inner">
             <div class="project-card-top">
-              <div class="project-number mono">U–04</div>
+              <div class="project-number mono">U–04 · <span class="upstream-org">Google</span></div>
+              <span class="project-status project-status--wip">In review</span>
+            </div>
+            <h3 class="project-name">protobuf.dart</h3>
+            <p class="project-desc">Uses <code>Int64.ZERO</code> as the default for 64-bit fields, so a <code>map&lt;string, int64&gt;</code> entry sent without its zero value (as Rust&rsquo;s prost does) no longer fails to parse with a gRPC <code>DATA_LOSS</code> error.</p>
+            <div class="project-tags">
+              <span class="tag">Dart</span>
+              <span class="tag">Protobuf</span>
+              <span class="tag">gRPC</span>
+            </div>
+            <a class="project-link" href="https://github.com/google/protobuf.dart/pull/1114" target="_blank" rel="noopener">View PR →</a>
+          </div>
+        </div>
+        <div class="project-card" data-reveal>
+          <div class="project-card-inner">
+            <div class="project-card-top">
+              <div class="project-number mono">U–05 · <span class="upstream-org">Microsoft</span></div>
+              <span class="project-status project-status--wip">In review</span>
+            </div>
+            <h3 class="project-name">CMake Tools for VS Code</h3>
+            <p class="project-desc"><em>Run Without Debugging</em> and <em>Debug</em> skipped the build when relaunched within ten seconds, so you could run stale code. Both now always build, with end-to-end tests.</p>
+            <div class="project-tags">
+              <span class="tag">TypeScript</span>
+              <span class="tag">VS Code</span>
+              <span class="tag">CMake</span>
+            </div>
+            <a class="project-link" href="https://github.com/microsoft/vscode-cmake-tools/pull/5157" target="_blank" rel="noopener">View PR →</a>
+          </div>
+        </div>
+        <div class="project-card" data-reveal>
+          <div class="project-card-inner">
+            <div class="project-card-top">
+              <div class="project-number mono">U–06 · <span class="upstream-org">Discord</span></div>
+              <span class="project-status project-status--wip">In review</span>
+            </div>
+            <h3 class="project-name">Embedded App SDK</h3>
+            <p class="project-desc">URL mapping turned two-argument <code>XMLHttpRequest.open()</code> calls into synchronous requests, so setting a response type or timeout threw. The SDK now passes the arguments through as given.</p>
+            <div class="project-tags">
+              <span class="tag">TypeScript</span>
+              <span class="tag">Web</span>
+              <span class="tag">SDK</span>
+            </div>
+            <a class="project-link" href="https://github.com/discord/embedded-app-sdk/pull/394" target="_blank" rel="noopener">View PR →</a>
+          </div>
+        </div>
+        <div class="project-card" data-reveal>
+          <div class="project-card-inner">
+            <div class="project-card-top">
+              <div class="project-number mono">U–07 · <span class="upstream-org">Coinbase · Base</span></div>
               <span class="project-status project-status--wip">In review</span>
             </div>
             <h3 class="project-name">Coinbase Wallet SDK &amp; Base Account SDK</h3>
-            <p class="project-desc">Keeps analytics failures out of the app console: when an ad blocker drops the SDK's telemetry request, apps embedding it no longer log a “Failed to fetch” error.</p>
+            <p class="project-desc">Keeps analytics failures out of the app console: when an ad blocker drops the SDK&rsquo;s telemetry request, apps embedding it no longer log a &ldquo;Failed to fetch&rdquo; error.</p>
             <div class="project-tags">
               <span class="tag">TypeScript</span>
               <span class="tag">Web3</span>
               <span class="tag">SDK</span>
             </div>
-            <a class="project-link" href="https://github.com/coinbase/coinbase-wallet-sdk/pull/1938" target="_blank">View PR →</a>
+            <a class="project-link" href="https://github.com/coinbase/coinbase-wallet-sdk/pull/1938" target="_blank" rel="noopener">View PR →</a>
           </div>
         </div>
+        <div class="project-card" data-reveal>
+          <div class="project-card-inner">
+            <div class="project-card-top">
+              <div class="project-number mono">U–08 · <span class="upstream-org">Rune</span></div>
+              <span class="project-status project-status--wip">In review</span>
+            </div>
+            <h3 class="project-name">Rune IDE</h3>
+            <p class="project-desc">Rune only compiled on Linux and macOS. It now builds on FreeBSD and the other platforms without presets of their own, and reads <code>uname</code> safely.</p>
+            <div class="project-tags">
+              <span class="tag">Go</span>
+              <span class="tag">Cross-platform</span>
+            </div>
+            <a class="project-link" href="https://github.com/unstablebuild/rune/pull/218" target="_blank" rel="noopener">View PR →</a>
+          </div>
+        </div>
+      </div>
+      <div class="projects-more" data-reveal>
+        <a class="btn btn-outline" href="https://github.com/search?q=is%3Apr+author%3Adhivadhiva+-user%3Adhivadhiva+-org%3ADhiva-Labs&type=pullrequests" target="_blank" rel="noopener">All upstream pull requests ↗</a>
       </div>
 
       <!-- Past Engineering Work -->
@@ -778,6 +877,6 @@
   <!-- TOAST CONTAINER -->
   <div class="toast" id="toast"></div>
 
-  <script src="assets/js/main.js?v=3"></script>
+  <script src="assets/js/main.js?v=4"></script>
 </body>
 </html>

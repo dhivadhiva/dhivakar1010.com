@@ -154,6 +154,7 @@
   const cmdTrigger = document.getElementById('cmdTrigger');
 
   const COMMANDS = [
+    { title: 'Circuit Lab — Electronics Simulator', sub: 'Flutter · Web · Linux · Windows · v1.0.0', category: 'Project', url: 'https://circuitlab.dhivalabs.com', icon: '🔌' },
     { title: 'ApiWorkbench — API Client', sub: 'Dart / Flutter · Snap Store · MS Store', category: 'Project', url: 'https://github.com/Dhiva-Labs/ApiWorkbench', icon: '⚡' },
     { title: 'CloudDrop — Upload-only Cloud Folder', sub: 'Rust · Snap Store · MS Store', category: 'Project', url: 'https://github.com/Dhiva-Labs/CloudDrop', icon: '☁️' },
     { title: 'CrossShell — Linux ↔ Windows Remote', sub: 'Dart / Rust · SSH · Remote Desktop', category: 'Project', url: 'https://github.com/Dhiva-Labs/CrossShell', icon: '🔗' },
@@ -163,7 +164,9 @@
     { title: 'Cloakpaste — Hide Secrets Before AI Chats', sub: 'Browser extension · Firefox · Chrome', category: 'Project', url: 'https://github.com/Dhiva-Labs/Cloakpaste', icon: '🛡️' },
     { title: 'Markdrop Clipper — Web Pages to Markdown', sub: 'Browser extension · Firefox · Chrome', category: 'Project', url: 'https://github.com/Dhiva-Labs/markdrop', icon: '📝' },
     { title: 'DL Image Tools — Private Image Editing', sub: 'Browser extension · Firefox · Chrome', category: 'Project', url: 'https://github.com/Dhiva-Labs/dl-image-tools', icon: '🖼️' },
-    { title: 'monero-lws — Upstream Fixes', sub: '8 merged pull requests · C++', category: 'Upstream', url: 'https://github.com/vtnerd/monero-lws/pulls?q=is%3Apr+author%3Adhivadhiva', icon: '🔧' },
+    { title: 'monero-lws — Upstream Fixes', sub: 'Monero · 8 merged pull requests · C++', category: 'Upstream', url: 'https://github.com/vtnerd/monero-lws/pulls?q=is%3Apr+author%3Adhivadhiva', icon: '🔧' },
+    { title: 'safe-bindings — Upstream Fixes', sub: 'Google · 2 merged pull requests · C++ / Rust', category: 'Upstream', url: 'https://github.com/google/safe-bindings/pulls?q=is%3Apr+author%3Adhivadhiva', icon: '🔧' },
+    { title: 'All Upstream Pull Requests', sub: 'Monero · Google · Microsoft · Discord · Coinbase · Base', category: 'Upstream', url: 'https://github.com/search?q=is%3Apr+author%3Adhivadhiva+-user%3Adhivadhiva+-org%3ADhiva-Labs&type=pullrequests', icon: '🌍' },
     { title: 'Dhiva-Labs Official Site', sub: 'dhivalabs.com · 50+ Projects', category: 'External', url: 'https://dhivalabs.com/', icon: '🌐' },
     { title: 'Sponsor Dhiva-Labs', sub: 'github.com/sponsors/Dhiva-Labs', category: 'External', url: 'https://github.com/sponsors/Dhiva-Labs', icon: '💖' },
     { title: 'View Professional Résumé', sub: 'Interactive & Printable PDF View', category: 'Navigation', url: 'resume.html', icon: '📄' },
