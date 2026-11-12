@@ -78,7 +78,7 @@
         </div>
         <div class="stat-divider"></div>
         <div class="stat">
-          <span class="stat-value">10</span>
+          <span class="stat-value">11</span>
           <span class="stat-label">Upstream PRs merged</span>
         </div>
         <div class="stat-divider"></div>
@@ -106,7 +106,7 @@
       <div class="about-right" data-reveal>
         <p>I am a software engineer with 4+ years in startup environments, working on AI systems, backend services and applied cryptography — taking products from raw research all the way to production while owning architecture, team, and delivery simultaneously.</p>
         <p>My core expertise spans blockchain protocol engineering, privacy systems (EVM, Monero-LWS, Bulletproofs++), applied cryptography, and systems design. Beyond protocol work, I've led cross-functional teams, driven product strategy, and made the architectural calls that determine whether something ships or stalls.</p>
-        <p>I hold an online PG Certification in AI &amp; ML from E&amp;ICT Academy, IIT Guwahati. Alongside my engineering work, I run <a href="https://dhivalabs.com/" target="_blank" style="color:var(--accent);text-decoration:underline"><strong>Dhiva-Labs</strong></a> — an independent software laboratory. Through Dhiva-Labs, I have designed and engineered <strong>50+ projects</strong> for Linux, Windows, Android, the web and the terminal, released through the Snap Store, Microsoft Store, a Launchpad PPA, Firefox Add-ons, the Chrome Web Store and GitHub Releases. I also send fixes upstream to <strong>Monero</strong>, <strong>Google</strong>, <strong>Microsoft</strong>, <strong>Discord</strong> and <strong>Coinbase</strong>: <strong>ten merged pull requests</strong> so far, eight in monero-lws, Monero's light-wallet server, and two in Google's safe-bindings. I build with AI coding agents, planning and reviewing the work myself and routing it across models to control token cost.</p>
+        <p>I hold an online PG Certification in AI &amp; ML from E&amp;ICT Academy, IIT Guwahati. Alongside my engineering work, I run <a href="https://dhivalabs.com/" target="_blank" style="color:var(--accent);text-decoration:underline"><strong>Dhiva-Labs</strong></a> — an independent software laboratory. Through Dhiva-Labs, I have designed and engineered <strong>50+ projects</strong> for Linux, Windows, Android, the web and the terminal, released through the Snap Store, Microsoft Store, a Launchpad PPA, Firefox Add-ons, the Chrome Web Store and GitHub Releases. I also send fixes upstream to <strong>Monero</strong>, <strong>Google</strong>, <strong>Rune</strong>, <strong>Microsoft</strong>, <strong>Discord</strong> and <strong>Coinbase</strong>: <strong>eleven merged pull requests</strong> so far, eight in monero-lws, Monero's light-wallet server, two in Google's safe-bindings and one in the Rune IDE. I build with AI coding agents, planning and reviewing the work myself and routing it across models to control token cost.</p>
 
         <div class="skills-grid">
           <span class="pill">Blockchain Architecture</span>
@@ -183,7 +183,8 @@
               <li>Built 50+ projects for Linux, Windows, Android, the web and the terminal, released through the Snap Store, the Microsoft Store, a Launchpad PPA, Firefox Add-ons, the Chrome Web Store and GitHub Releases.</li>
               <li>Flagships include ApiWorkbench (API client at Postman parity), CloudDrop (upload-only multi-cloud folder), CrossShell (Linux ↔ Windows SSH and remote desktop), DiskRescue (photo and video recovery) and Kilonova (Monero wallet).</li>
               <li>Latest release: Circuit Lab 1.0.0, a simulated electronics bench for Arduino, ESP32 and Raspberry Pi Pico that runs in the browser, on Linux and on Windows.</li>
-              <li>Contributing fixes upstream: eight merged pull requests in vtnerd/monero-lws (scanner correctness, WebSocket shutdown, payment-ID decryption, admin tooling and CI) and two in google/safe-bindings (lifetime safety in the Rust regex bindings), with more in review at Microsoft, Discord, Coinbase and Monero.</li>
+              <li>Contributing fixes upstream: eight merged pull requests in vtnerd/monero-lws (scanner correctness, WebSocket shutdown, payment-ID decryption, admin tooling and CI), two in google/safe-bindings (lifetime safety in the Rust regex bindings) and one in unstablebuild/rune (it now builds beyond Linux and macOS), with more in review at Google, Microsoft, Discord, Coinbase and Monero.</li>
+              <li>Now building <strong>kilnfile</strong> (in development): memory-safe content disarm and reconstruction that rebuilds untrusted files with Rust parsers, reached from C++ through google/safe-bindings.</li>
             </ul>
           </div>
         </div>
@@ -515,7 +516,7 @@
               <div class="project-badges"><span class="badge badge-firefox">Firefox Add-ons</span><span class="badge badge-chrome">Chrome Web Store</span></div>
             </div>
             <h3 class="project-name">Browser extensions</h3>
-            <p class="project-desc">Three privacy-first extensions, each released on both Firefox Add-ons and the Chrome Web Store.</p>
+            <p class="project-desc">Five privacy-first extensions on Firefox Add-ons. Cloakpaste, Markdrop Clipper and DL Image Tools are on the Chrome Web Store too.</p>
             <div class="ext-list">
               <div class="ext-item">
                 <h4 class="ext-name">Cloakpaste</h4>
@@ -532,6 +533,16 @@
                 <p class="ext-desc">Compresses, resizes, converts, crops and edits images in your browser, with no uploads.</p>
                 <div class="ext-links"><a href="https://addons.mozilla.org/en-US/firefox/addon/dl-image-tools/" target="_blank" rel="noopener">Firefox ↗</a><a href="https://chromewebstore.google.com/detail/dl-image-tools/ighlhdddbockbcooddmeajncpgihlcob" target="_blank" rel="noopener">Chrome ↗</a><a href="https://github.com/Dhiva-Labs/dl-image-tools" target="_blank" rel="noopener">GitHub ↗</a></div>
               </div>
+              <div class="ext-item">
+                <h4 class="ext-name">Kilonova</h4>
+                <p class="ext-desc">A Monero wallet in the browser. Your keys stay sealed with your password, and it scans the chain itself against a node.</p>
+                <div class="ext-links"><a href="https://addons.mozilla.org/en-US/firefox/addon/kilonova/" target="_blank" rel="noopener">Firefox ↗</a><a href="https://github.com/Dhiva-Labs/kilonova" target="_blank" rel="noopener">GitHub ↗</a></div>
+              </div>
+              <div class="ext-item">
+                <h4 class="ext-name">DL Prism Companion</h4>
+                <p class="ext-desc">Chat with your local DL Prism AI gateway, pick models and see its routing decisions from the toolbar.</p>
+                <div class="ext-links"><a href="https://addons.mozilla.org/en-US/firefox/addon/dl-prism-companion/" target="_blank" rel="noopener">Firefox ↗</a><a href="https://github.com/Dhiva-Labs/dl_prism" target="_blank" rel="noopener">GitHub ↗</a></div>
+              </div>
             </div>
           </div>
         </div>
@@ -544,7 +555,7 @@
       <div class="section-header" id="upstream" data-reveal>
         <span class="section-label">Open Source · Upstream</span>
         <h2 class="section-title">Fixes sent upstream</h2>
-        <p class="upstream-intro">Pull requests to the organizations whose code I build on: <strong>Monero</strong>, <strong>Google</strong>, <strong>Microsoft</strong>, <strong>Discord</strong>, <strong>Coinbase</strong> and <strong>Base</strong>. Ten are merged so far, eight in monero-lws and two in Google&rsquo;s safe-bindings; the rest are in review.</p>
+        <p class="upstream-intro">Pull requests to the organizations whose code I build on: <strong>Monero</strong>, <strong>Google</strong>, <strong>Rune</strong>, <strong>Microsoft</strong>, <strong>Discord</strong>, <strong>Coinbase</strong> and <strong>Base</strong>. Eleven are merged so far: eight in monero-lws, two in Google&rsquo;s safe-bindings and one in Rune; the rest are in review.</p>
       </div>
       <div class="projects-grid projects-grid--upstream">
         <div class="project-card" data-reveal>
@@ -666,7 +677,7 @@
           <div class="project-card-inner">
             <div class="project-card-top">
               <div class="project-number mono">U–08 · <span class="upstream-org">Rune</span></div>
-              <span class="project-status project-status--wip">In review</span>
+              <span class="project-status project-status--live">Merged</span>
             </div>
             <h3 class="project-name">Rune IDE</h3>
             <p class="project-desc">Rune only compiled on Linux and macOS. It now builds on FreeBSD and the other platforms without presets of their own, and reads <code>uname</code> safely.</p>
@@ -877,6 +888,6 @@
   <!-- TOAST CONTAINER -->
   <div class="toast" id="toast"></div>
 
-  <script src="assets/js/main.js?v=4"></script>
+  <script src="assets/js/main.js?v=5"></script>
 </body>
 </html>
