@@ -78,7 +78,7 @@
         </div>
         <div class="stat-divider"></div>
         <div class="stat">
-          <span class="stat-value">11</span>
+          <span class="stat-value">14</span>
           <span class="stat-label">Upstream PRs merged</span>
         </div>
         <div class="stat-divider"></div>
@@ -106,7 +106,7 @@
       <div class="about-right" data-reveal>
         <p>I am a software engineer with nearly five years in startup environments, working on AI systems, backend services and applied cryptography — taking products from raw research all the way to production while owning architecture, team, and delivery simultaneously.</p>
         <p>My core expertise spans blockchain protocol engineering, privacy systems (EVM, Monero-LWS, Bulletproofs++), applied cryptography, and systems design. Beyond protocol work, I've led cross-functional teams, driven product strategy, and made the architectural calls that determine whether something ships or stalls.</p>
-        <p>I hold an online PG Certification in AI &amp; ML from E&amp;ICT Academy, IIT Guwahati. Alongside my engineering work, I run <a href="https://dhivalabs.com/" target="_blank" style="color:var(--accent);text-decoration:underline"><strong>Dhiva-Labs</strong></a> — an independent software laboratory. Through Dhiva-Labs, I have designed and engineered <strong>50+ projects</strong> for Linux, Windows, Android, the web and the terminal, released through the Snap Store, Microsoft Store, a Launchpad PPA, Firefox Add-ons, the Chrome Web Store and GitHub Releases. I also send fixes upstream to <strong>Monero</strong>, <strong>Google</strong>, <strong>Rune</strong>, <strong>Microsoft</strong>, <strong>Discord</strong> and <strong>Coinbase</strong>: <strong>eleven merged pull requests</strong> so far, eight in monero-lws, Monero's light-wallet server, two in Google's safe-bindings and one in the Rune IDE. I build with AI coding agents, planning and reviewing the work myself and routing it across models to control token cost.</p>
+        <p>I hold an online PG Certification in AI &amp; ML from E&amp;ICT Academy, IIT Guwahati. Alongside my engineering work, I run <a href="https://dhivalabs.com/" target="_blank" style="color:var(--accent);text-decoration:underline"><strong>Dhiva-Labs</strong></a> — an independent software laboratory. Through Dhiva-Labs, I have designed and engineered <strong>50+ projects</strong> for Linux, Windows, Android, the web and the terminal, released through the Snap Store, Microsoft Store, a Launchpad PPA, Firefox Add-ons, the Chrome Web Store and GitHub Releases. I also send fixes upstream to <strong>Rust</strong>, <strong>Monero</strong>, <strong>Google</strong>, <strong>Rune</strong>, <strong>Microsoft</strong>, <strong>Discord</strong> and <strong>Coinbase</strong>: <strong>14 merged pull requests</strong> so far, eight in monero-lws, Monero's light-wallet server, two in Google's safe-bindings, and one each in Rust's Cargo, Monero's FCMP++ codebase, Google's Crubit and the Rune IDE. I build with AI coding agents, planning and reviewing the work myself and routing it across models to control token cost.</p>
 
         <div class="skills-grid">
           <span class="pill">Blockchain Architecture</span>
@@ -183,7 +183,7 @@
               <li>Built 50+ projects for Linux, Windows, Android, the web and the terminal, released through the Snap Store, the Microsoft Store, a Launchpad PPA, Firefox Add-ons, the Chrome Web Store and GitHub Releases.</li>
               <li>Flagships include ApiWorkbench (API client at Postman parity), CloudDrop (upload-only multi-cloud folder), CrossShell (Linux ↔ Windows SSH and remote desktop), DiskRescue (photo and video recovery) and Kilonova (Monero wallet).</li>
               <li>Latest release: Circuit Lab 1.0.0, a simulated electronics bench for Arduino, ESP32 and Raspberry Pi Pico that runs in the browser, on Linux and on Windows.</li>
-              <li>Contributing fixes upstream: eight merged pull requests in vtnerd/monero-lws (scanner correctness, WebSocket shutdown, payment-ID decryption, admin tooling and CI), two in google/safe-bindings (lifetime safety in the Rust regex bindings) and one in unstablebuild/rune (it now builds beyond Linux and macOS), with more in review at Google, Microsoft, Discord, Coinbase and Monero.</li>
+              <li>Contributing fixes upstream: 14 merged pull requests — eight in vtnerd/monero-lws (scanner correctness, WebSocket shutdown, payment-ID decryption, admin tooling and CI), two in google/safe-bindings (lifetime safety in the Rust regex bindings), and one each in rust-lang/cargo (Windows long-path git checkouts), Monero's FCMP++ codebase (transaction JSON), google/crubit (docs deploy) and unstablebuild/rune (it now builds beyond Linux and macOS), with more in review at Google, Microsoft, Discord, Coinbase and Monero.</li>
               <li>Now building <strong>kilnfile</strong> (in development): memory-safe content disarm and reconstruction that rebuilds untrusted files with Rust parsers, reached from C++ through google/safe-bindings.</li>
             </ul>
           </div>
@@ -555,13 +555,30 @@
       <div class="section-header" id="upstream" data-reveal>
         <span class="section-label">Open Source · Upstream</span>
         <h2 class="section-title">Fixes sent upstream</h2>
-        <p class="upstream-intro">Pull requests to the organizations whose code I build on: <strong>Monero</strong>, <strong>Google</strong>, <strong>Rune</strong>, <strong>Microsoft</strong>, <strong>Discord</strong>, <strong>Coinbase</strong> and <strong>Base</strong>. Eleven are merged so far: eight in monero-lws, two in Google&rsquo;s safe-bindings and one in Rune; the rest are in review.</p>
+        <p class="upstream-intro">Pull requests to the organizations whose code I build on: <strong>Rust</strong>, <strong>Monero</strong>, <strong>Google</strong>, <strong>Rune</strong>, <strong>Microsoft</strong>, <strong>Discord</strong>, <strong>Coinbase</strong> and <strong>Base</strong>. Fourteen are merged so far: eight in monero-lws, two in Google&rsquo;s safe-bindings, and one each in Rust&rsquo;s Cargo, Monero&rsquo;s FCMP++ codebase, Google&rsquo;s Crubit and Rune; the rest are in review.</p>
       </div>
       <div class="projects-grid projects-grid--upstream">
         <div class="project-card" data-reveal>
           <div class="project-card-inner">
             <div class="project-card-top">
-              <div class="project-number mono">U–01 · <span class="upstream-org">Monero</span></div>
+              <div class="project-number mono">U–01 · <span class="upstream-org">Rust</span></div>
+              <span class="project-status project-status--live">Merged</span>
+            </div>
+            <h3 class="project-name">Cargo</h3>
+            <p class="project-desc">Git dependencies whose checkout holds paths longer than Windows&rsquo; 260-character limit failed with &ldquo;path too long&rdquo;. Cargo now enables <code>core.longpaths</code> on its git checkouts, submodules included, with regression tests verified on Linux and Windows. Fixes rust-lang/cargo#13020.</p>
+            <div class="project-tags">
+              <span class="tag">Rust</span>
+              <span class="tag">Cargo</span>
+              <span class="tag">Git</span>
+              <span class="tag">Windows</span>
+            </div>
+            <a class="project-link" href="https://github.com/rust-lang/cargo/pull/17752" target="_blank" rel="noopener">View PR →</a>
+          </div>
+        </div>
+        <div class="project-card" data-reveal>
+          <div class="project-card-inner">
+            <div class="project-card-top">
+              <div class="project-number mono">U–02 · <span class="upstream-org">Monero</span></div>
               <span class="project-status project-status--live">8 merged · 2 in review</span>
             </div>
             <h3 class="project-name">monero-lws, Monero&rsquo;s light-wallet server</h3>
@@ -578,11 +595,11 @@
         <div class="project-card" data-reveal>
           <div class="project-card-inner">
             <div class="project-card-top">
-              <div class="project-number mono">U–02 · <span class="upstream-org">Google</span></div>
-              <span class="project-status project-status--live">2 merged · 1 in review</span>
+              <div class="project-number mono">U–03 · <span class="upstream-org">Google</span></div>
+              <span class="project-status project-status--live">2 merged · 4 in review</span>
             </div>
             <h3 class="project-name">safe-bindings</h3>
-            <p class="project-desc">Lifetime guards on the C++ bindings to Rust&rsquo;s regex crate, so calling <code>AsStr()</code>, <code>Find()</code>, <code>FindAll()</code> or <code>Split()</code> on a temporary no longer compiles into a dangling view. In review: an out-of-bounds write, a use-after-free and a memory blowup fixed in the EXIF bindings, with regression tests.</p>
+            <p class="project-desc">Lifetime guards on the C++ bindings to Rust&rsquo;s regex crate, so calling <code>AsStr()</code>, <code>Find()</code>, <code>FindAll()</code> or <code>Split()</code> on a temporary no longer compiles into a dangling view. In review: an out-of-bounds write, a use-after-free and a memory blowup fixed in the EXIF bindings, entity-expansion attacks rejected in the XML bindings, unsupported zip compression methods refused at open time, and a roaring bitmap regression.</p>
             <div class="project-tags">
               <span class="tag">C++</span>
               <span class="tag">Rust</span>
@@ -595,11 +612,11 @@
         <div class="project-card" data-reveal>
           <div class="project-card-inner">
             <div class="project-card-top">
-              <div class="project-number mono">U–03 · <span class="upstream-org">Monero</span></div>
-              <span class="project-status project-status--wip">In review</span>
+              <div class="project-number mono">U–04 · <span class="upstream-org">Monero</span></div>
+              <span class="project-status project-status--live">1 merged · 1 in review</span>
             </div>
             <h3 class="project-name">Monero wallet &amp; FCMP++</h3>
-            <p class="project-desc">Stops view-only wallets reporting outgoing amounts near 2<sup>64</sup> when some input key images are unknown. For the FCMP++ upgrade, writes the new proof fields into the transaction JSON so pool transactions keep their real hash.</p>
+            <p class="project-desc">Merged for the FCMP++ upgrade: the new proof fields are now written into the transaction JSON, so mempool transactions keep their real hash for ZMQ consumers such as monero-lws. In review: view-only wallets stop reporting outgoing amounts near 2<sup>64</sup> when some input key images are unknown.</p>
             <div class="project-tags">
               <span class="tag">C++</span>
               <span class="tag">Monero</span>
@@ -612,7 +629,39 @@
         <div class="project-card" data-reveal>
           <div class="project-card-inner">
             <div class="project-card-top">
-              <div class="project-number mono">U–04 · <span class="upstream-org">Google</span></div>
+              <div class="project-number mono">U–05 · <span class="upstream-org">Google</span></div>
+              <span class="project-status project-status--live">1 merged · 1 in review</span>
+            </div>
+            <h3 class="project-name">Crubit</h3>
+            <p class="project-desc">A duplicate entry in the docs&rsquo; <code>SUMMARY.md</code> had made <code>mdbook build</code> fail since early November, so Crubit&rsquo;s documentation site had stopped deploying; removing it unblocked the deploy. In review: a soundness fix in <code>forward_declare</code>, where safe code could coerce slice references into thin array pointers and read out of bounds.</p>
+            <div class="project-tags">
+              <span class="tag">Rust</span>
+              <span class="tag">C++</span>
+              <span class="tag">Interop</span>
+              <span class="tag">mdBook</span>
+            </div>
+            <a class="project-link" href="https://github.com/google/crubit/pulls?q=is%3Apr+author%3Adhivadhiva" target="_blank" rel="noopener">View PRs →</a>
+          </div>
+        </div>
+        <div class="project-card" data-reveal>
+          <div class="project-card-inner">
+            <div class="project-card-top">
+              <div class="project-number mono">U–06 · <span class="upstream-org">Rune</span></div>
+              <span class="project-status project-status--live">Merged</span>
+            </div>
+            <h3 class="project-name">Rune IDE</h3>
+            <p class="project-desc">Rune only compiled on Linux and macOS. It now builds on FreeBSD and the other platforms without presets of their own, and reads <code>uname</code> safely.</p>
+            <div class="project-tags">
+              <span class="tag">Go</span>
+              <span class="tag">Cross-platform</span>
+            </div>
+            <a class="project-link" href="https://github.com/unstablebuild/rune/pull/218" target="_blank" rel="noopener">View PR →</a>
+          </div>
+        </div>
+        <div class="project-card" data-reveal>
+          <div class="project-card-inner">
+            <div class="project-card-top">
+              <div class="project-number mono">U–07 · <span class="upstream-org">Google</span></div>
               <span class="project-status project-status--wip">In review</span>
             </div>
             <h3 class="project-name">protobuf.dart</h3>
@@ -628,7 +677,7 @@
         <div class="project-card" data-reveal>
           <div class="project-card-inner">
             <div class="project-card-top">
-              <div class="project-number mono">U–05 · <span class="upstream-org">Microsoft</span></div>
+              <div class="project-number mono">U–08 · <span class="upstream-org">Microsoft</span></div>
               <span class="project-status project-status--wip">In review</span>
             </div>
             <h3 class="project-name">CMake Tools for VS Code</h3>
@@ -644,7 +693,7 @@
         <div class="project-card" data-reveal>
           <div class="project-card-inner">
             <div class="project-card-top">
-              <div class="project-number mono">U–06 · <span class="upstream-org">Discord</span></div>
+              <div class="project-number mono">U–09 · <span class="upstream-org">Discord</span></div>
               <span class="project-status project-status--wip">In review</span>
             </div>
             <h3 class="project-name">Embedded App SDK</h3>
@@ -660,7 +709,7 @@
         <div class="project-card" data-reveal>
           <div class="project-card-inner">
             <div class="project-card-top">
-              <div class="project-number mono">U–07 · <span class="upstream-org">Coinbase · Base</span></div>
+              <div class="project-number mono">U–10 · <span class="upstream-org">Coinbase · Base</span></div>
               <span class="project-status project-status--wip">In review</span>
             </div>
             <h3 class="project-name">Coinbase Wallet SDK &amp; Base Account SDK</h3>
@@ -671,21 +720,6 @@
               <span class="tag">SDK</span>
             </div>
             <a class="project-link" href="https://github.com/coinbase/coinbase-wallet-sdk/pull/1938" target="_blank" rel="noopener">View PR →</a>
-          </div>
-        </div>
-        <div class="project-card" data-reveal>
-          <div class="project-card-inner">
-            <div class="project-card-top">
-              <div class="project-number mono">U–08 · <span class="upstream-org">Rune</span></div>
-              <span class="project-status project-status--live">Merged</span>
-            </div>
-            <h3 class="project-name">Rune IDE</h3>
-            <p class="project-desc">Rune only compiled on Linux and macOS. It now builds on FreeBSD and the other platforms without presets of their own, and reads <code>uname</code> safely.</p>
-            <div class="project-tags">
-              <span class="tag">Go</span>
-              <span class="tag">Cross-platform</span>
-            </div>
-            <a class="project-link" href="https://github.com/unstablebuild/rune/pull/218" target="_blank" rel="noopener">View PR →</a>
           </div>
         </div>
       </div>
@@ -888,6 +922,6 @@
   <!-- TOAST CONTAINER -->
   <div class="toast" id="toast"></div>
 
-  <script src="assets/js/main.js?v=5"></script>
+  <script src="assets/js/main.js?v=6"></script>
 </body>
 </html>
