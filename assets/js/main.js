@@ -155,7 +155,7 @@
 
   const COMMANDS = [
     { title: 'Circuit Lab — Electronics Simulator', sub: 'Flutter · Web · Linux · Windows · v1.0.0', category: 'Project', url: 'https://circuitlab.dhivalabs.com', icon: '🔌' },
-    { title: 'ApiWorkbench — API Client', sub: 'Dart / Flutter · Snap Store · MS Store', category: 'Project', url: 'https://github.com/Dhiva-Labs/ApiWorkbench', icon: '⚡' },
+    { title: 'ApiWorkbench — API Client', sub: 'Dart / Flutter · Google Play · Snap Store · MS Store', category: 'Project', url: 'https://github.com/Dhiva-Labs/ApiWorkbench', icon: '⚡' },
     { title: 'CloudDrop — Upload-only Cloud Folder', sub: 'Rust · Snap Store · MS Store', category: 'Project', url: 'https://github.com/Dhiva-Labs/CloudDrop', icon: '☁️' },
     { title: 'CrossShell — Linux ↔ Windows Remote', sub: 'Dart / Rust · SSH · Remote Desktop', category: 'Project', url: 'https://github.com/Dhiva-Labs/CrossShell', icon: '🔗' },
     { title: 'DiskRescue — Photo & Video Recovery', sub: 'Rust · Linux · Windows', category: 'Project', url: 'https://github.com/Dhiva-Labs/DiskRescue', icon: '💽' },
